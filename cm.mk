@@ -2,18 +2,18 @@
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := P700i
+PRODUCT_RELEASE_NAME := Diablo
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lenovo/P700i/device_P700i.mk)
+$(call inherit-product, device/TCT/Diablo/device_Diablo.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := P700i
-PRODUCT_NAME := cm_P700i
-PRODUCT_BRAND := lenovo
-PRODUCT_MODEL := P700i
-PRODUCT_MANUFACTURER := lenovo
-PRODUCT_RELEASE_NAME := P700i
+PRODUCT_DEVICE := Diablo
+PRODUCT_NAME := cm_Diablo
+PRODUCT_BRAND := TCT
+PRODUCT_MODEL := 6030X
+PRODUCT_MANUFACTURER := TCT
+PRODUCT_RELEASE_NAME := Diablo

@@ -19,11 +19,11 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/lenovo/P700i/BoardConfigVendor.mk
+-include vendor/TCT/Diablo/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := P700i
-TARGET_BOOTLOADER_BOARD_NAME := P700i
+TARGET_BOARD_PLATFORM := Diablo
+TARGET_BOOTLOADER_BOARD_NAME := Diablo
 
 TARGET_CPU_ABI := armeabi
 TARGET_CPU_ABI := armeabi-v7a
@@ -40,12 +40,12 @@ WIFI_DRIVER_MODULE_NAME          := wlan
 BOARD_HAVE_BLUETOOTH  := true
 
 #EGL configuration
-BOARD_EGL_CFG := device/lenovo/P700i/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/TCT/Diablo/prebuilt/egl.cfg
 USE_OPENGL_RENDERER := true
 
 #BOARD_KERNEL_BASE := 0x10000000
 #BOARD_KERNEL_PAGESIZE := 2048
-BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/P700i/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/TCT/Diablo/custombootimg.mk
 
 TARGET_USERIMAGES_USE_EXT4 := true
 # fix this up by examining /proc/mtd on a running device
@@ -56,14 +56,14 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 14946668
 TARGET_RECOVERY_FORCE_BACKUP_SIZE := 6291456
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/lenovo/P700i/kernel
+TARGET_PREBUILT_KERNEL := device/TCT/Diablo/kernel
 
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/lenovo/P700i/recovery_kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/TCT/Diablo/recovery_kernel
 TARGET_RECOVERY_PRE_COMMAND := "touch /cache/recovery/boot;sync;"
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lenovo/P700i/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/TCT/Diablo/recovery/recovery_keys.c
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_USES_RECOVERY_CHARGEMODE := false
 BOARD_UMS_LUNFILE := /sys/devices/platform/mt_usb/gadget/lun%d/file

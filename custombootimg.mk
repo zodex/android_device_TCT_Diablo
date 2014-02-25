@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-MKRAMDISK := device/lenovo/P700i/tools/mkramdisk.py
+MKRAMDISK := device/TCT/Diablo/tools/mkramdisk.py
 INSTALLED_BOOTIMAGE_TARGET := $(PRODUCT_OUT)/boot.img
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES)
 	$(call pretty,"Target boot image: $@")

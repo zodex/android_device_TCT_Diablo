@@ -1,11 +1,8 @@
 #
-# begin mediatek build properties for P700i
+# begin mediatek build properties for Diablo
 #
 
-ro.product.ota.model=LenovoP700i_ROW
-ro.product.sw.internal.version=P700i_ROW_S106_121001
 ro.product.hw.version=9001
-ro.product.particular.version=LENOVO_FUJIAN
 
 ro.mediatek.version.release=ALPS.ICS2.6577.SP.V1.20120605
 ro.mediatek.platform=MT6577
