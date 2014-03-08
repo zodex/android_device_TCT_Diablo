@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2012 The Android Open Source Project
 #
@@ -21,7 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Default network type.
 # 0 => WCDMA preferred, 3 => GSM/AUTO (PRL) preferred
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=0
+    ro.telephony.default_network=3
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
@@ -37,14 +36,13 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     com.android.future.usb.accessory \
 
-PRODUCT_LOCALES += en
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 #for boot.img and recovery.img
 PRODUCT_COPY_FILES += \
-    device/lenovo/P700i/ram_header:ram_header \
-    device/lenovo/P700i/ram_header_recovery:ram_header_recovery \
+    device/TCT/Diablo/ram_header:ram_header \
+    device/TCT/Diablo/ram_header_recovery:ram_header_recovery \
 
 #root
 PRODUCT_COPY_FILES += \

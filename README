@@ -1,4 +1,4 @@
-Device configuration for the Lenovo P700i
+Device configuration for the TCT Diablo
 
 Copyright (C) 2012-2013 The CyanogenMod Project
 
@@ -16,12 +16,12 @@ When done, copy whole lenovo folder to [your CM path]/device.
 Apply recovery patch if needed (see patches).
 
 PREPARING BUILD:
-plug in your P700i (make sure that you have latest rom and adb is set up) and fire up extract-files.sh;
+plug in your mobile (make sure that you have latest rom and adb is set up) and fire up extract-files.sh;
 
 To build CM, just follow next instruction:
 in terminal:
 cd [your CM path]
 . build/envsetup.sh
-brunch P700i
+brunch Diablo
 
 then, when build is ready, you could find it in $OUT dir.
